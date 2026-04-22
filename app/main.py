@@ -74,8 +74,6 @@ ${amazon_item_price_total:.2f} USD
 Link:
 {amazon_item_url}
 """
-
-
 subject=f"Price Alert! \n\tat {formatted_time} \n\ton {today}"
+# Email Client
 notifier.send_email(body=body,subject=subject)
-
